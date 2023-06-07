@@ -195,4 +195,4 @@ setTimeout(() => {
     box.style.display = "none";
 
     document.body.classList.remove("overflow-hidden");
-}, 5000);
+}, 000);
