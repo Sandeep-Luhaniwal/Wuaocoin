@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iDox</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- slick slider link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="overflow-hidden">
+    <!--  ******************** preloder ******************** -->
+    <div id="box" class="overflow-hidden">
+        <div id="preloader-box">
+            <img class="mx-auto loder-img" src="./assets/images/main_circle.png" alt="preloder" />
+        </div>
+    </div>
+    <!--  ******************** header ******************** -->
+    <header class="mt-0  primary-bg d-flex flex-column">
+        <nav class="position-relative z-3">
+            <div class="position-absolute z-n1 top-0 start-0">
+                <img src="./assets/images/Vector_1.png" alt="Vector_1">
+            </div>
+            <div class="main-container py-4 z-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="d-inline-block"><img src="./assets/images/Logo_icon.png" alt="Logo_icon"></a>
+                    <div class="d-flex">
+                        <div
+                            class="z-4 d-flex justify-content-center align-items-center flex-lg-row order-1 order-lg-0 ms-2 ms-sm-4 ms-lg-0">
+                            <input type="checkbox" id="iconBox" hidden>
+                            <label for="iconBox" class="cente">
+                                <span class="to"></span>
+                                <span class="mi"></span>
+                                <span class="bo"></span>
+                            </label>
+                            <div class="d-flex align-items-center sm-screen gap-4 ps-0 mb-0 d-flex gap-4 ms-200">
+                                <div><a href="" class="text-decoration-none navLinks">ICO</a></div>
+                                <div><a href="" class="text-decoration-none navLinks">WHITEPAPER</a></div>
+                                <div class="d-flex gap-4">
+                                    <div class="iconBox position-relative">
+                                        <a href="#" class="iconCenter" style="height: 28px;">
+                                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.3855 1.55173C14.2813 1.037 13.0858 0.663403 11.8405 0.447548C11.8295 0.447199 11.8187 0.449248 11.8086 0.453551C11.7986 0.457854 11.7896 0.464307 11.7824 0.472454C11.6329 0.746425 11.4586 1.10342 11.3423 1.37739C10.0215 1.17813 8.67819 1.17813 7.35732 1.37739C7.24109 1.09511 7.06675 0.746425 6.90901 0.472454C6.9007 0.45585 6.8758 0.447548 6.85089 0.447548C5.60557 0.663403 4.41837 1.037 3.30588 1.55173C3.29758 1.55173 3.28928 1.56003 3.28098 1.56833C1.0228 4.9473 0.400141 8.23494 0.70732 11.4894C0.70732 11.506 0.715622 11.5226 0.732226 11.5309C2.22661 12.6268 3.66288 13.2909 5.08254 13.7309C5.10744 13.7392 5.13235 13.7309 5.14065 13.7143C5.47274 13.2577 5.77161 12.7762 6.02898 12.2698C6.04558 12.2366 6.02898 12.2034 5.99577 12.1951C5.52255 12.0124 5.07424 11.7966 4.63422 11.5475C4.60102 11.5309 4.60102 11.4811 4.62592 11.4562C4.71724 11.3897 4.80857 11.315 4.89989 11.2486C4.9165 11.232 4.9414 11.232 4.95801 11.2403C7.81394 12.5437 10.894 12.5437 13.7167 11.2403C13.7333 11.232 13.7583 11.232 13.7749 11.2486C13.8662 11.3233 13.9575 11.3897 14.0488 11.4645C14.082 11.4894 14.082 11.5392 14.0405 11.5558C13.6088 11.8132 13.1522 12.0207 12.679 12.2034C12.6458 12.2117 12.6375 12.2532 12.6458 12.2781C12.9114 12.7845 13.2103 13.266 13.5341 13.7226C13.559 13.7309 13.5839 13.7392 13.6088 13.7309C15.0368 13.2909 16.473 12.6268 17.9674 11.5309C17.984 11.5226 17.9923 11.506 17.9923 11.4894C18.3576 7.72851 17.3863 4.46578 15.4187 1.56833C15.4104 1.56003 15.4021 1.55173 15.3855 1.55173V1.55173ZM6.46069 9.50516C5.60557 9.50516 4.89159 8.71646 4.89159 7.74511C4.89159 6.77377 5.58897 5.98506 6.46069 5.98506C7.34072 5.98506 8.03809 6.78207 8.02979 7.74511C8.02979 8.71646 7.33241 9.50516 6.46069 9.50516ZM12.2473 9.50516C11.3922 9.50516 10.6782 8.71646 10.6782 7.74511C10.6782 6.77377 11.3755 5.98506 12.2473 5.98506C13.1273 5.98506 13.8247 6.78207 13.8164 7.74511C13.8164 8.71646 13.1273 9.50516 12.2473 9.50516Z"
+                                                    fill="url(#paint0_linear_0_45)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_45" x1="9.34639" y1="-0.750035"
+                                                        x2="9.34639" y2="12.3463" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.5315" stop-color="#FFA53B" />
+                                                        <stop offset="1" stop-color="#FF983B" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="iconBox position-relative">
+                                        <a href="#" class="iconCenter" style="height: 28px;">
+                                            <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.7393 2.54247C16.1439 2.79932 15.4959 2.98417 14.8285 3.05617C15.5214 2.6445 16.0403 1.99414 16.2879 1.22711C15.6376 1.61391 14.9253 1.88515 14.1825 2.02878C13.872 1.69688 13.4966 1.43247 13.0794 1.25203C12.6623 1.07159 12.2125 0.978985 11.758 0.979989C9.91924 0.979989 8.44042 2.47048 8.44042 4.29954C8.44042 4.55639 8.47156 4.81323 8.52215 5.06035C5.76883 4.91636 3.31321 3.60099 1.68068 1.58708C1.38321 2.09516 1.22733 2.67367 1.22925 3.26242C1.22925 4.41434 1.81494 5.43006 2.70807 6.02742C2.18173 6.00669 1.66773 5.86202 1.20785 5.60518V5.64604C1.20785 7.25912 2.34809 8.59589 3.86777 8.90333C3.58243 8.97744 3.2889 9.01536 2.9941 9.01618C2.77812 9.01618 2.57381 8.99478 2.36755 8.96559C2.78784 10.281 4.01176 11.2364 5.46917 11.2675C4.32893 12.1606 2.9007 12.686 1.34989 12.686C1.07164 12.686 0.814794 12.6763 0.548218 12.6451C2.01925 13.5888 3.76464 14.1337 5.64429 14.1337C11.7464 14.1337 15.0854 9.07845 15.0854 4.69065C15.0854 4.54666 15.0854 4.40267 15.0756 4.25868C15.7216 3.78585 16.2879 3.20016 16.7393 2.54247Z"
+                                                    fill="url(#paint0_linear_0_49)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_49" x1="8.63937" y1="-0.20556"
+                                                        x2="8.63937" y2="12.7595" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.5315" stop-color="#FFA53B" />
+                                                        <stop offset="1" stop-color="#FF983B" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="iconBox position-relative">
+                                        <a href="#" class="iconCenter" style="height: 28px; width: 22px;">
+                                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.845 1.96463L15.2143 14.3711C15.0156 15.2466 14.4982 15.4645 13.7628 15.0523L9.75416 12.0984L7.82018 13.9589C7.60598 14.1731 7.42728 14.3518 7.01446 14.3518L7.30275 10.2697L14.7317 3.55677C15.0549 3.2691 14.6613 3.10908 14.2298 3.39737L5.04561 9.18063L1.09172 7.94278C0.231831 7.67442 0.216264 7.08289 1.27105 6.67007L16.736 0.711842C17.4521 0.443476 18.0785 0.871243 17.845 1.96525V1.96463Z"
+                                                    fill="url(#paint0_linear_0_53)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_53" x1="9.17364" y1="-0.683626"
+                                                        x2="9.17364" y2="13.7263" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.5315" stop-color="#FFA53B" />
+                                                        <stop offset="1" stop-color="#FF983B" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="iconBox position-relative me-2">
+                                        <a href="#" class="iconCenter" style="height: 28px;">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask0_0_56" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                    x="0" y="0" width="17" height="17">
+                                                    <path
+                                                        d="M2.28606 3.83736C3.24 3.83736 4.01331 3.08388 4.01331 2.1544C4.01331 1.22492 3.24 0.471436 2.28606 0.471436C1.33212 0.471436 0.558807 1.22492 0.558807 2.1544C0.558807 3.08388 1.33212 3.83736 2.28606 3.83736Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.558807 6.36157H4.01331V16.8801H0.558807V6.36157ZM7.46782 10.3586V16.8801H10.4905V10.9897C10.4905 9.93787 11.1382 9.09639 12.2178 9.09639C13.2973 9.09639 13.945 10.1482 13.945 10.9897V16.8801H16.9677V10.3586C16.9677 9.09639 15.4564 6.36157 12.2178 6.36157C8.97916 6.36157 7.46782 9.09639 7.46782 10.3586Z"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask0_0_56)">
+                                                    <path d="M-1.59903 -1.21167H19.128V18.9839H-1.59903V-1.21167Z"
+                                                        fill="url(#paint0_linear_0_56)" />
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_56" x1="8.75887" y1="-3.0319"
+                                                        x2="8.75887" y2="16.8741" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.5315" stop-color="#FFA53B" />
+                                                        <stop offset="1" stop-color="#FF983B" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center ms-lg-5 z-index-1">
+                            <div class="dropdown boxBorder d-flex">
+                                <button
+                                    class="border-0 bg-transparent dropdown-toggle justify-content-center navLinks fw-regular gap-1 align-items-center d-flex"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6836 0.166992C5.69397 0.166992 0.0273438 5.83362 0.0273438 12.8232L0.0277656 12.8456L0.0273438 12.868C0.0273438 19.8331 5.66233 25.4795 12.614 25.4795L12.641 25.4786L12.6836 25.4795C19.6732 25.4795 25.3398 19.8129 25.3398 12.8232C25.3398 5.83362 19.6732 0.166992 12.6836 0.166992ZM24.4961 12.8232C24.4961 13.8332 24.3687 14.8132 24.1307 15.7485C24.0206 15.6726 23.7295 15.9865 23.6578 15.5705C23.568 15.0541 22.9858 14.6955 22.6723 14.9423C22.3589 15.1891 21.4632 15.9067 21.4189 16.3556C21.3738 16.8041 20.9928 17.3424 20.8144 16.9618C20.6347 16.5805 20.098 15.3912 20.12 15.0773C20.1419 14.7634 19.8728 15.1895 19.4711 14.5614C19.0678 13.9332 18.3738 14.4711 17.814 14.1572C17.2542 13.8429 16.6273 13.4168 16.3134 13.2827C16.0008 13.1477 16.8732 14.5386 16.9855 14.3593C17.0981 14.18 17.5453 14.4939 17.6799 14.4939C17.8144 14.4939 18.1722 14.8077 17.9486 15.0997C17.725 15.3916 15.7325 16.6041 15.5308 16.2885C15.3283 15.973 14.1429 13.529 13.9408 13.6788C13.7391 13.8286 15.195 16.378 15.4414 16.5349C15.6869 16.6923 16.4265 16.5577 16.7842 16.4007C17.1428 16.2438 16.0455 18.1507 15.576 18.3751C15.106 18.5991 14.7255 19.2948 14.9263 19.6087C15.1279 19.9226 15.1503 21.1118 14.7255 21.2692C14.2994 21.4257 14.1429 21.6725 14.277 21.9644C14.4108 22.2555 13.964 22.7487 13.7623 23.063C13.5602 23.3769 12.7773 24.0274 12.7098 24.2071C12.6431 24.3868 11.6804 24.3417 11.299 24.3417C10.9189 24.3417 11.2096 23.8705 11.1644 23.4671C11.1205 23.063 10.7847 22.6816 10.7847 22.48C10.7847 22.2779 10.6721 21.8066 10.516 21.5826C10.3595 21.3578 10.3139 20.9317 10.4709 20.6853C10.6282 20.4381 10.7396 19.7209 10.427 19.4066C10.1131 19.0927 9.75452 18.554 10.0013 18.1279C10.2477 17.7018 9.73258 17.7469 9.30733 17.5444C8.88166 17.3424 8.00838 17.6119 7.56077 17.6794C7.11273 17.7465 6.66555 17.5672 6.53097 17.3424C6.39681 17.1184 6.10572 16.5577 5.80745 16.4227C5.51003 16.2885 5.68047 15.7051 5.85934 15.4811C6.03906 15.257 5.68047 14.8305 5.85934 14.6504C6.03906 14.4711 6.15044 13.821 6.50861 13.6788C6.8672 13.5371 6.7997 13.4396 6.81067 13.1029C6.82206 12.7663 7.21356 12.7663 7.28022 12.587C7.34772 12.4073 7.54895 12.3178 7.95311 12.3178C8.356 12.3178 9.03817 12.082 9.36302 12.0035C9.68786 11.9251 10.2477 11.8129 10.2025 12.1271C10.1578 12.441 10.1692 12.7996 10.3814 12.7996C10.5945 12.7996 10.8856 12.9232 11.2214 13.1325C11.5572 13.3413 11.5682 13.1704 11.6133 12.9346C11.6584 12.6988 12.128 12.7886 12.614 13.0131C13.1 13.2375 13.7628 13.0802 13.9745 13.0582C14.1876 13.035 14.2774 12.3963 14.2213 12.1833C14.1648 11.9702 13.8294 12.2841 13.6168 12.1495C13.4042 12.0154 13.1126 12.1833 12.9004 11.9921C12.6874 11.8019 12.6536 11.353 12.9004 11.342C13.1464 11.3306 13.27 11.2522 13.4151 11.0843C13.5611 10.9159 14.1095 10.8151 14.3222 10.983C14.5344 11.1514 14.8487 11.2636 15.0381 11.0729C15.2283 10.8826 14.6584 10.5126 14.5344 10.4114C14.4112 10.3106 14.512 9.98529 14.3892 9.98529C14.2656 9.98529 14.1648 10.041 14.2323 10.1983C14.2994 10.3553 13.8741 10.6354 13.8062 10.4789C13.7395 10.3215 13.6278 10.019 13.4598 10.019C13.2924 10.019 13.0683 10.7818 13.057 10.905C13.0456 11.0286 12.7545 11.2302 12.5199 11.2302C12.2853 11.2302 12.2853 11.4998 12.4081 11.6234C12.5313 11.7466 12.4414 12.2402 12.2178 12.2685C11.9938 12.2972 11.9154 12.2179 11.882 12.0267C11.8487 11.8365 11.6247 11.8588 11.6133 11.4661C11.6019 11.0733 11.3555 10.883 11.199 10.7033C11.0425 10.5236 10.6392 9.99668 10.4827 10.2325C10.3262 10.4683 11.0425 10.9729 11.2323 11.1071C11.4235 11.2416 11.3897 11.5331 11.2889 11.6006C11.188 11.6681 10.9978 12.2179 10.886 12.2621C10.7733 12.3069 10.6666 12.0951 10.6666 12.0951C10.4987 12.028 10.9012 11.8259 10.9687 11.7251C11.0353 11.6243 10.2637 10.9176 10.1245 10.7156C9.98528 10.5135 9.39044 10.8835 9.12213 10.7493C8.85339 10.6151 8.45008 11.2539 8.41717 11.6239C8.383 11.9943 7.94636 12.0947 7.54347 12.0947C7.141 12.0947 6.87184 11.7922 7.00684 11.4893C7.141 11.1864 6.93934 10.6818 7.17475 10.6481C7.40973 10.6147 8.08052 10.6481 8.21509 10.2781C8.34925 9.90809 7.5768 9.57143 7.8797 9.50435C8.18134 9.43685 8.65216 8.96646 8.98797 8.69688C9.32294 8.42773 9.35669 8.09149 9.65875 8.06787C9.96166 8.04466 9.59209 7.48526 9.86083 7.31735C10.13 7.14902 10.1966 7.92316 10.3983 7.92316C10.6 7.92316 11.002 7.85566 11.3382 8.02399C11.6745 8.19232 11.7749 7.85566 11.9095 7.41776C12.0436 6.9807 12.3794 6.74487 13.0506 6.40863C13.7222 6.07198 12.279 6.50946 12.0099 6.1728C11.7411 5.83615 12.1107 5.09576 12.279 4.57305C12.4469 4.04993 11.7415 5.09576 11.372 5.63449C11.002 6.1728 11.4728 6.40821 11.4386 6.77819C11.4053 7.1486 10.8016 7.58566 10.8016 7.58566C10.5329 7.61941 10.5662 7.0811 10.432 6.8457C10.2975 6.61029 10.0621 6.71112 9.6925 6.98027C9.32294 7.24943 9.28961 6.34113 9.1892 5.97073C9.08922 5.60116 9.79375 5.12951 10.1249 4.87807C10.4557 4.62579 11.002 3.41374 11.607 2.47212C12.2119 1.53007 13.0848 2.00088 13.3198 2.37129C13.5556 2.74085 14.1589 2.50545 14.7305 3.17876C15.3018 3.85165 14.596 4.15413 13.9589 3.88076C13.3198 3.60738 14.0927 4.55829 14.4614 4.82745C14.8309 5.09618 15.0326 4.22163 15.1672 4.01998C15.3013 3.8179 15.8046 3.91915 16.1738 3.38041C16.5437 2.8421 17.3829 2.94335 17.8621 3.00241C18.3418 3.0619 18.2224 2.70752 17.9203 2.4177C17.6967 2.20338 18.154 2.39112 18.6924 2.65395C22.1657 4.70974 24.4961 8.49354 24.4961 12.8232ZM7.63881 8.80362C7.52744 8.68845 7.75145 8.23493 7.85186 8.10035C7.95311 7.96577 7.57173 8.01049 7.59494 8.2016C7.6173 8.39187 7.44897 8.6838 7.21398 8.76227C6.979 8.84074 6.71111 8.81796 6.84484 8.60491C6.97858 8.39187 6.85581 8.20118 6.75498 7.9991C6.65458 7.79702 7.31439 7.67384 7.44939 7.55065C7.58355 7.42746 7.23719 7.34857 7.24773 7.1583C7.25912 6.9672 7.33759 6.79929 7.47091 6.77693C7.60548 6.75457 7.7312 6.66851 7.85186 6.6761C8.22184 6.69888 8.10878 7.53968 8.24378 7.80926C8.37794 8.07799 8.75889 8.40368 8.72514 8.63866C8.69139 8.87449 8.61967 9.00907 8.34545 8.94157C8.06997 8.87407 7.62911 9.2892 7.46036 9.21073C7.29203 9.13184 7.75145 8.91879 7.63881 8.80362ZM5.22653 4.08663C5.56277 4.25454 5.83066 3.94995 6.06522 3.88455C6.34323 3.80777 6.50186 4.79327 6.23355 4.75952C5.96481 4.72577 5.66275 5.29784 5.27462 5.26409C4.88608 5.23034 5.0582 4.9616 4.62156 4.55787C4.52791 4.47096 4.48952 4.39249 4.48614 4.32373C4.57938 4.23387 4.67219 4.14359 4.7688 4.0571C4.91983 4.01702 5.09913 4.02293 5.22653 4.08663ZM15.7321 21.0211C16.0455 20.954 15.9852 20.3575 16.2695 20.3259C16.8741 20.2588 16.2919 21.9408 16.0683 22.412C15.8443 22.8833 15.754 22.8605 15.541 22.569C15.3271 22.2779 15.3962 21.8062 15.541 21.5822C15.6852 21.3574 15.4182 21.0886 15.7321 21.0211Z"
+                                            fill="white" />
+                                    </svg>Eng
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item navLinks" href="#">Hindi</a></li>
+                                    <li><a class="dropdown-item navLinks" href="#">Urdu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="flex-grow-1 d-flex align-items-center position-relative z-2 pt-5 pt-lg-0 min-vh-80 ">
+            <img src="./assets/images/image_arrow.png" alt="image_arrow" class="position-absolute first-arrow">
+            <div class="main-container pt-5 pt-lg-0">
+                <div class="row ">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column pt-lg-">
+                        <div data-aos="fade-left">
+                            <p class="subHeading ms-0 ps-0 text-center text-lg-start">Welcome to</p>
+                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                <h1 class="mainHeading max-w-510">The Future of E-Commerce</h1>
+                            </div>
+                            <p class="paraGraph text-center text-lg-start">A multi-purpose token to improve digital
+                                sales and purchases</p>
+                            <div
+                                class="pt-2 d-flex justify-content-center align-items-center justify-content-lg-start mb-5 mb-lg-0 flex-column flex-sm-row">
+
+                                <div class="my-3 position-relative">
+                                    <a href="#" class="btn-inline text-decoration-none second-arrow">How To Buy</a>
+                                </div>
+                                <div class="mt-4 mt-sm-0 ">
+                                    <a href="#" class="btn-outline ms-sm-3 ms-0 text-decoration-none ">Read
+                                        Whitepaper</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-5 py-xl-0 d-flex justify-content-center align-items-baseline">
+                        <img src="./assets/images/Image_1.png" alt="Image_1"
+                            class="w-md-75 w-lg-100 w_100 pt-md-5 pb-5 pb-lg-0 hero_image">
+                        <img src="./assets/images/Vector_2.png" alt="Vector_2"
+                            class="position-absolute end-0 bottom-0 z-n1">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--  ******************** image color section ******************** -->
+    <section class="position-relative">
+        <div class="d-none d-xl-block">
+            <img src="./assets/images/Vector_3.png" alt="Vector_3" class="position-absolute end-0 vector_3">
+            <img src="./assets/images/Vector_5.png" alt="Vector_4"
+                class="position-absolute start-0 end-0 vector_4 z-n1 w-100">
+            <img src="./assets/images/image_arrow_3.png" alt="image_arrow_3" class="position-absolute third-arrow">
+            <img src="./assets/images/image_arrow_4.png" alt="image_arrow_4" class="position-absolute fourth-arrow">
+            <div class="col-6">
+                <img src="./assets/images/Vector_4.png" alt="vector_4_again" class="transfrom-37 w-100 z-n1">
+            </div>
+        </div>
+    </section>
+    <!--  ******************** Our Projects ******************** -->
+    <section class="position-relative pt-5 pt-xl-0 mt-xl-420">
+        <img src="./assets/images/info_image_1.png" alt="info_image_1"
+            class="w-100 position-absolute end-0 info_image_1">
+        <img src="./assets/images/info_image_2.png" alt="info_image_2" class="position-absolute start-0 info_image_2">
+        <div class="main-container py-5 py-sm-0">
+            <div
+                class="row text-center circle-height text-lg-start justify-content-center align-items-center justify-content-lg-around">
+                <div class="col-8 col-lg-6">
+                    <div class="d-flex justify-content-center align-items-center circleBox ms-lg-65 ms-xl-0">
+                        <div class="d-flex justify-content-center align-items-center position-relative">
+                            <img src="./assets/images/main_circle.png" alt="main_circle"
+                                class="position-relative spiner">
+                            <img src="./assets/images/circle_image_top.png" alt="circle_image_1"
+                                class="position-absolute circle_image_top" data-aos="fade-down">
+                            <img src="./assets/images/Circle_image_topLeft.png" alt="top_left"
+                                class="position-absolute circle_img_topLeft" data-aos="fade-right">
+                            <img src="./assets/images/Circle_image_bottomLeft.png" alt="bottom_left"
+                                class="position-absolute circle_img_bottomLeft" data-aos="fade-up-right">
+                            <img src="./assets/images/Circle_image_topRight.png" alt="top_right"
+                                class="position-absolute circle_img_topRight" data-aos="fade-down-left">
+                            <img src="./assets/images/Circle_image_bottomRight.png" alt="bottom_right"
+                                class="position-absolute circle_img_bottomRight" data-aos="fade-up-left">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ms-lg-5 pt-5 pt-lg-0 ms-xl-0 mt-5 mt-sm-0 ">
+                    <h2 class="sectionHeading" data-aos="fade-right">Our Project</h2>
+                    <p class="sectionParagraph pt-2" data-aos="fade-right" data-aos-duration="1000">WUAOCOIN Our Project
+                        WUAOCOIN E-COMMERCE BUYERS HOLDERS Wuaocoin is
+                        the
+                        first project in the
+                        TechFi category that allows users multiple options to have utility and usability in
+                        the ecosystem, its time to change the way of seeing the purchases and sales of products and
+                        services within an multilateral electronic commerce platform using crypto technology. OFFICIAL
+                        EXCHANGES SELLERS BUSINESS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  ******************** Benfit ******************** -->
+    <section class="mt-330 mt-xs-270 mt-sm-440 mt-md-590 mt-lg-350 pb-5 bg-white">
+        <div class="main-container position-relative">
+            <img src="./assets/images/image_arrow_5.png" alt="image_arrow_5" class="position-absolute fifth-arrow">
+            <h2 class="sectionHeading text-center">Benefits</h2>
+            <div class="row py-4 py-md-5 overflow-hidden">
+                <div class="myslider">
+                    <div class="col-4">
+                        <div class="mx-auto circle-animation">
+                            <img src="./assets/images/slider_image_1.png" alt="slider_image_1" class="w-100">
+                        </div>
+                        <p class="mb-0 mt-4 sectionParagraph text-center" data-aos="flip-up">Services, Products and
+                            Community
+                            <span class="d-xl-block">All in one place!</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <div class="mx-auto circle-animation">
+                            <img src="./assets/images/slider_image_2.png" alt="slider_image_2" class="w-100">
+                        </div>
+                        <p class="mb-0 mt-4 sectionParagraph text-center" data-aos="flip-up">Selling in crypto will no
+                            longer
+                            <span class="d-xl-block">be complicated, it will be safe</span>
+                            <span class="d-xl-block">and reliable.</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <div class="mx-auto circle-animation">
+                            <img src="./assets/images/slider_image_3.png" alt="slider_image_3" class="w-100">
+                        </div>
+                        <p class="mb-0 mt-4 sectionParagraph text-center" data-aos="flip-up">Buying and getting a real
+                            <span class="d-xl-block">discount is possible? Join and </span>
+                            <span class="d-xl-block">check it out.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  ******************** Whitepaper ******************** -->
+    <section class="bg-image position-relative overflow-hidden py-5 overflow-hidden">
+        <div class="d-flex px-md-4 flex-column flex-md-row">
+            <div class="py-4 py-md-5 mb-md-0 text-center" data-aos="fade-left">
+                <img src="./assets/images/image_2.png" alt="image_2" class="w_75 w_md_100 left_image_whitepaper">
+            </div>
+            <div class="d-flex text-center align-items-center flex-column py-xl-5" data-aos="zoom-in-down">
+                <h3 class="text-center text-white sectionHeading ">Whitepaper</h3>
+                <p class="text-center sectionParagraph text-white px-3">We want you to know our vision we leave you our
+                    whitepaper and now be a part of the digital transformation.</p>
+                <div class="mt-3 mt-md-4 ">
+                    <a href="#" class="btn-outline ms-sm-3 ms-0 text-decoration-none btn-arrow position-relative">Read
+                        Whitepaper</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center py-md-5 mt-md-4 py-4" data-aos="fade-left">
+                <img src="./assets/images/image_3.png" alt="image_3" class="w_75 w_md_100 right_image_whitepaper">
+            </div>
+        </div>
+    </section>
+    <!--  ******************** Road Map ******************** -->
+    <section class="overflow-hidden position-relative py-3 py-sm-4 py-md-5">
+        <img src="./assets/images/info_image_3.png" alt="info_image_3" class="position-absolute top-0 start-0">
+        <img src="./assets/images/info_image_4.png" alt="info_image_4"
+            class="position-absolute info_image_4 bottom-0 end-0 ">
+        <img src="./assets/images/arrow_1.png" alt="arrow_1" class="position-absolute arrow_1">
+        <div class="py-3 py-sm-4 py-md-5">
+            <h2 class="sectionHeading text-center pt-5" data-aos="fade-left">RoadMap</h2>
+            <p class="sectionParagraph text-center px-3 px-lg-0" data-aos="fade-left">Knowing our values, understanding
+                the business idea and
+                then,
+                gradually,<span class="d-lg-block"> presenting the plans to the public is our way
+                    of doing things.</span></p>
+            <div class="row d-flex justify-content-center py-3 py-sm-4 py-lg-5">
+                <div class="col-sm-8 col-lg-6">
+                    <img src="./assets/images/roadmap_image.png" alt="roadmap_image" class="w-100"
+                        data-aos="zoom-out-up">
+                </div>
+            </div>
+            <div class="row overflow-hidden py-3 py-sm-4 py-md-5py-5">
+                <div class="myslider_1">
+                    <div class="col-auto d-flex justify-content-center align-items-center" data-aos="flip-up">
+                        <div class="slideBox bg-slide_1 p-3">
+                            <h4 class="text-white">01</h4>
+                            <p class="subHeading">Organizational concept (creations)</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex justify-content-center align-items-center" data-aos="flip-up">
+                        <div class="slideBox bg-slide_2 p-3">
+                            <h4 class="text-white">02</h4>
+                            <p class="subHeading">Directional Process (Actions)</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex justify-content-center align-items-center" data-aos="flip-up">
+                        <div class="slideBox bg-slide_3 p-3">
+                            <h4 class="text-white">03</h4>
+                            <p class="subHeading">Operational Development (technical team)</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex justify-content-center align-items-center" data-aos="flip-up">
+                        <div class="slideBox bg-slide_4 p-3">
+                            <h4 class="text-white">04</h4>
+                            <p class="subHeading">Strategic Opportunities (alliances)</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex justify-content-center align-items-center" data-aos="flip-up">
+                        <div class="slideBox bg-slide_5 p-3">
+                            <h4 class="text-white">05</h4>
+                            <p class="subHeading">Stakeholders (benefits)</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex justify-content-center align-items-center" data-aos="flip-up">
+                        <div class="slideBox bg-slide_6 p-3">
+                            <h4 class="text-white">06</h4>
+                            <p class="subHeading">Human Identity (social contribution)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******************** Timer ******************** -->
+    <section class="bg-image_2nd position-relative overflow-hidden">
+        <div class="main-container py-5" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <h3 class="timeHeading text-center" data-aos="fade-up-right">Public Sale 5% in ERC20 & BEP20, <span
+                    class="d-lg-block">100% for the
+                    Community</span></h3>
+            <div id="countdown-container" class="py-3">
+                <ul class="d-flex justify-content-center align-items-center">
+                    <li class="d-inline-block text-center timerHeading"><span id="days"
+                            class="countdown mb-1 d-block">00</span>Days</li>
+                    <li class="countdown-list f-w-400 times">:</li>
+                    <li class="d-inline-block text-center timerHeading"><span id="hours"
+                            class="countdown mb-1 d-block">00</span>Hours</li>
+                    <li class="countdown-list f-w-400 times">:</li>
+                    <li class="d-inline-block text-center timerHeading"><span id="minutes"
+                            class="countdown mb-1 d-block">00</span>Minute</li>
+                    <li class="countdown-list f-w-400 times">:</li>
+                    <li class="d-inline-block text-center timerHeading"><span id="seconds"
+                            class="countdown mb-1 d-block">00</span>Second</li>
+                </ul>
+            </div>
+            <div class="my-3 d-flex justify-content-center" data-aos="fade-up">
+                <a href="#" class="btn-inline text-decoration-none second-arrow_1 position-relative">How To Buy</a>
+            </div>
+        </div>
+    </section>
+    <!-- ******************** Token Line ******************** -->
+    <section class="position-relative overflow-hidden">
+        <img src="./assets/images/info_image_5.png" alt="info_image_5" class="position-absolute top-0 start-0">
+        <img src="./assets/images/info_image_6.png" alt="info_image_6"
+            class="position-absolute info_image_6 end-0 bottom-0">
+        <div class="main-container py-3 py-md-4 py-lg-5">
+            <h2 class="text-black sectionHeading text-center">Tokenomics</h2>
+            <div class="row d-flex justify-content-center align-items-center py-3 py-md-4 py-lg-5">
+                <div class="col-sm-9 col-md-8 position-relative">
+                    <span class="d-none d-md-block token position-absolute token_1">Team</span>
+                    <span
+                        class="d-none d-md-block token position-absolute text-end token_2 position-relative">Subdivided
+                        into <span class="d-block">5% Founders</span></span>
+                    <img src="./assets/images/arrow_2.png" alt="arrow_2" class=" arrow_2 d-none d-lg-block">
+                    <span class="d-none d-md-block token position-absolute token_3">Workers</span>
+                    <span class="d-none d-md-block token position-absolute token_4">Buyers/holders/ <span
+                            class="d-block">community</span></span>
+                    <img src="./assets/images/Image_4.png" alt="Image_4" class="w-100" data-aos="zoom-out"
+                        data-aos-duration="3000">
+                </div>
+                <div class="col-sm-9 d-md-none pt-4">
+                    <div class="box_size bg_pink d-flex align-items-center">
+                        <span class="ml-60 token-xs token_sm white-space-nowrap" data-aos-duration="1000"
+                            data-aos="fade-left">Team</span>
+                    </div>
+                    <div class="box_size bg_orange d-flex align-items-center my-2">
+                        <span class="ml-60 token-xs token_sm white-space-nowrap" data-aos-duration="1000"
+                            data-aos="fade-left">Buyers/holders/ community</span>
+                    </div>
+                    <div class="box_size bg_green d-flex align-items-center">
+                        <span class="ml-60 token-xs token_sm white-space-nowrap" data-aos-duration="800"
+                            data-aos="fade-left">Subdivided into 5% Founders</span>
+                    </div>
+                    <div class="box_size bg_skyblue d-flex align-items-center mt-2">
+                        <span class="ml-60 token-xs token_sm white-space-nowrap" data-aos-duration="800"
+                            data-aos="fade-left">Workers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******************** Partnership ******************** -->
+    <section class="bg-image_3rd position-relative overflow-hidden">
+        <div class="px-3 py-5" data-aos="fade-down" data-aos-duration="3000">
+            <h2 class="sectionHeading text-white text-center ">Partnership</h2>
+            <div class="row d-flex justify-content-center myslider_2">
+                <div class="d-flex justify-content-center py-4 ">
+                    <img src="./assets/images/partnership_image.png" alt="partnership_image" class="w-100">
+                </div>
+                <div class="d-flex justify-content-center py-4 ">
+                    <img src="./assets/images/partnership_image.png" alt="partnership_image" class="w-100">
+                </div>
+                <div class="d-flex justify-content-center py-4 ">
+                    <img src="./assets/images/partnership_image.png" alt="partnership_image" class="w-100">
+                </div>
+                <div class="d-flex justify-content-center py-4 ">
+                    <img src="./assets/images/partnership_image.png" alt="partnership_image" class="w-100">
+                </div>
+                <div class="d-flex justify-content-center py-4 ">
+                    <img src="./assets/images/partnership_image.png" alt="partnership_image" class="w-100">
+                </div>
+                <div class="d-flex justify-content-center py-4 ">
+                    <img src="./assets/images/partnership_image.png" alt="partnership_image" class="w-100">
+                </div>
+                <div class="d-flex justify-content-center py-4 ">
+                    <img src="./assets/images/partnership_image.png" alt="partnership_image" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******************** footer ******************** -->
+    <footer class="position-relative pt-3 pt-sm-4 pt-sm-5 overflow-hidden">
+        <img src="./assets/images/info_image_7.png" alt="info_image_7" class="position-absolute info_image_7 start-0">
+        <img src="./assets/images/info_image_8.png" alt="info_image_8"
+            class="position-absolute info_image_8 end-0 bottom-0">
+        <img src="./assets/images/arrow_3.png" alt="arrow_3" class="position-absolute arrow_3">
+        <div class="main-container">
+            <div class="row py-3 py-sm-4 py-md-5">
+                <div class="col-lg-6 pb-4" data-aos="fade-left">
+                    <img src="./assets/images/Logo_icon.png" alt="footer_icon">
+                    <p class="footerPara pt-2">Welcome to The Future of the <span class="d-lg-block">Market. The world's
+                            first
+                            Global</span>TechFi Platform</p>
+                    <ul class="d-flex mb-0 ps-0 gap-3" data-aos="fade-right">
+                        <li class="iconBox primary-bg-1 position-relative">
+                            <a href="#" class="iconCenter" style="height: 28px;">
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.6483 1.77512C11.7062 1.33596 10.6862 1.01721 9.6237 0.83304C9.61438 0.832742 9.60512 0.834491 9.59655 0.838162C9.58798 0.841834 9.58033 0.847339 9.57412 0.854291C9.44662 1.08804 9.29787 1.39262 9.1987 1.62637C8.07174 1.45637 6.92566 1.45637 5.7987 1.62637C5.69953 1.38554 5.55078 1.08804 5.4162 0.854291C5.40912 0.840124 5.38787 0.83304 5.36662 0.83304C4.30412 1.01721 3.2912 1.33596 2.34203 1.77512C2.33495 1.77512 2.32787 1.78221 2.32078 1.78929C0.394116 4.67221 -0.137134 7.47721 0.12495 10.2539C0.12495 10.268 0.132033 10.2822 0.1462 10.2893C1.4212 11.2243 2.64662 11.791 3.85787 12.1664C3.87912 12.1735 3.90037 12.1664 3.90745 12.1522C4.19078 11.7626 4.44578 11.3518 4.66537 10.9197C4.67953 10.8914 4.66537 10.863 4.63703 10.856C4.23328 10.7001 3.85078 10.516 3.47537 10.3035C3.44703 10.2893 3.44703 10.2468 3.46828 10.2255C3.5462 10.1689 3.62412 10.1051 3.70203 10.0485C3.7162 10.0343 3.73745 10.0343 3.75162 10.0414C6.18828 11.1535 8.8162 11.1535 11.2245 10.0414C11.2387 10.0343 11.2599 10.0343 11.2741 10.0485C11.352 10.1122 11.4299 10.1689 11.5079 10.2326C11.5362 10.2539 11.5362 10.2964 11.5008 10.3105C11.1324 10.5301 10.7429 10.7072 10.3391 10.863C10.3108 10.8701 10.3037 10.9055 10.3108 10.9268C10.5374 11.3589 10.7924 11.7697 11.0687 12.1593C11.0899 12.1664 11.1112 12.1735 11.1324 12.1664C12.3508 11.791 13.5762 11.2243 14.8512 10.2893C14.8654 10.2822 14.8724 10.268 14.8724 10.2539C15.1841 7.04512 14.3554 4.26137 12.6766 1.78929C12.6695 1.78221 12.6624 1.77512 12.6483 1.77512ZM5.0337 8.56096C4.30412 8.56096 3.69495 7.88804 3.69495 7.05929C3.69495 6.23054 4.28995 5.55762 5.0337 5.55762C5.78453 5.55762 6.37953 6.23762 6.37245 7.05929C6.37245 7.88804 5.77745 8.56096 5.0337 8.56096ZM9.97078 8.56096C9.2412 8.56096 8.63203 7.88804 8.63203 7.05929C8.63203 6.23054 9.22703 5.55762 9.97078 5.55762C10.7216 5.55762 11.3166 6.23762 11.3095 7.05929C11.3095 7.88804 10.7216 8.56096 9.97078 8.56096Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="iconBox primary-bg-1 position-relative">
+                            <a href="#" class="iconCenter" style="height: 28px;">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8506 1.62022C13.3426 1.83936 12.7898 1.99708 12.2203 2.0585C12.8115 1.70727 13.2543 1.15239 13.4654 0.497956C12.9107 0.827977 12.3029 1.05939 11.6692 1.18194C11.4043 0.898762 11.0839 0.673169 10.728 0.519218C10.3721 0.365268 9.98835 0.28626 9.6006 0.287116C8.03175 0.287116 6.77003 1.5588 6.77003 3.11934C6.77003 3.33848 6.79659 3.55762 6.83976 3.76846C4.49064 3.64561 2.39552 2.52335 1.00265 0.805085C0.748853 1.23858 0.615855 1.73216 0.617492 2.23448C0.617492 3.21729 1.1172 4.08389 1.87921 4.59356C1.43015 4.57588 0.991597 4.45245 0.599231 4.23331V4.26817C0.599231 5.64444 1.57208 6.78497 2.86866 7.04727C2.62522 7.11051 2.37478 7.14286 2.12325 7.14356C1.93898 7.14356 1.76466 7.1253 1.58868 7.1004C1.94728 8.22266 2.99152 9.0378 4.23497 9.06436C3.26212 9.82637 2.04357 10.2746 0.720422 10.2746C0.48302 10.2746 0.263879 10.2663 0.036438 10.2398C1.29152 11.0449 2.78068 11.5098 4.38439 11.5098C9.59064 11.5098 12.4395 7.19669 12.4395 3.45303C12.4395 3.33018 12.4395 3.20733 12.4312 3.08448C12.9823 2.68106 13.4654 2.18135 13.8506 1.62022Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="iconBox primary-bg-1 position-relative">
+                            <a href="#" class="iconCenter" style="height: 28px;">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.9856 1.27418L12.7411 11.8593C12.5716 12.6063 12.1302 12.7922 11.5028 12.4405L8.08257 9.92027L6.43251 11.5076C6.24976 11.6904 6.09729 11.8429 5.74507 11.8429L5.99104 8.35999L12.3294 2.63258C12.6051 2.38715 12.2694 2.25061 11.9012 2.49658L4.06526 7.43083L0.691822 6.37471C-0.0418344 6.14574 -0.0551155 5.64105 0.844822 5.28883L14.0395 0.205302C14.6504 -0.0236667 15.1849 0.341302 14.9856 1.27471V1.27418Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="iconBox primary-bg-1 position-relative me-2">
+                            <a href="#" class="iconCenter" style="height: 28px;">
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.33553 2.87179C3.14942 2.87179 3.80922 2.22892 3.80922 1.4359C3.80922 0.642873 3.14942 0 2.33553 0C1.52164 0 0.861847 0.642873 0.861847 1.4359C0.861847 2.22892 1.52164 2.87179 2.33553 2.87179Z"
+                                        fill="white" />
+                                    <path
+                                        d="M0.861847 5.02563H3.80922V14H0.861847V5.02563ZM6.75658 8.43589V14H9.33553V8.97435C9.33553 8.07692 9.88816 7.35897 10.8092 7.35897C11.7303 7.35897 12.2829 8.2564 12.2829 8.97435V14H14.8618V8.43589C14.8618 7.35897 13.5724 5.02563 10.8092 5.02563C8.04606 5.02563 6.75658 7.35897 6.75658 8.43589Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 pb-4" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-sm-4 col-6 pt-5 pt-lg-0">
+                            <ul class="ps-0 mb-0">
+                                <li class="footerHeading f-w-600" data-aos="fade-right">Documents</li>
+                                <li class="mt-3"><a href="" class="text-decoration-none footerPara">WhitePaper</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">Customers</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">Business</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-6 order-1 order-sm-0 pt-5 pt-lg-0">
+                            <ul class="ps-0 mb-0">
+                                <li class="footerHeading f-w-600" data-aos="fade-right">Quick Links</li>
+                                <li class="mt-3"><a href="" class="text-decoration-none footerPara">Home</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">About Us</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">Benefits</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">ICO</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">RoadMap</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">Tokenomics</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">Partnership</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-6 order-0 pt-5 pt-lg-0">
+                            <ul class="ps-0 mb-0">
+                                <li class="footerHeading f-w-600" data-aos="fade-right">Company</li>
+                                <li class="mt-3"><a href="" class="text-decoration-none footerPara">WUAOCOIN</a></li>
+                                <li class="mt-2"><a href="" class="text-decoration-none footerPara">WUAOSHOP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brdr-top py-3">
+            <p class="text-center mb-0">© Copyright 2022 - Wuaocoin</p>
+        </div>
+    </footer>
+
+    <!-- ******************** AOS js file ******************** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ******************** slider js file ******************** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ******************** js file link ******************** -->
+    <script src="./assets/js/style.js">
+    </script>
+</body>
+
+</html>
