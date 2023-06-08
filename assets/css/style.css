@@ -6,15 +6,6 @@
     list-style-type: none;
 }
 
-.main-container {
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-
-}
-
 .iconBox {
     width: 35px;
     height: 35px;
@@ -182,13 +173,18 @@
     border-radius: 40px;
 }
 
-.btn_outline {
+.opc_05 {
+    opacity: 0.5;
+}
+
+.btn_outline,
+.btn-outline {
     padding: 13px 26px;
     border-radius: 40px;
 }
 
 .upper:hover {
-    transform: translateY(-15%) !important;
+    transform: translateY(-20%) !important;
     transition: linear 200ms;
 }
 
@@ -206,16 +202,14 @@
 }
 
 .ms-200 {
-    margin-right: -15%;
+    margin-right: -24px;
 }
 
 img[alt="Logo_icon"] {
     width: 160px;
 }
 
-img[alt="Vector_1"] {
-    max-width: 250px;
-}
+
 
 .max-w-510 {
     max-width: 290px;
@@ -292,14 +286,22 @@ img[alt="Vector_2"] {
     animation: arrow 7s linear infinite;
 }
 
+.arrow_4 {
+    right: 6%;
+    top: 5%;
+    animation: arrow 7s linear infinite;
+}
+
 .right_image_whitepaper {
     animation: imageUpDown 5s linear infinite;
     object-fit: cover;
+    width: 75%;
 }
 
 .left_image_whitepaper {
     animation: imageUpDown 5s linear infinite;
     object-fit: cover;
+    width: 75%;
 }
 
 .hero_image {
@@ -413,7 +415,7 @@ img[alt="Vector_2"] {
     overflow: hidden;
     width: 300px;
     height: 300px;
-    border-radius: 40% 55% 74% 30% / 40% 40% 55% 48%;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
     background-image: url(../images/bubl_1.png);
     background-size: cover;
     background-position: center;
@@ -484,8 +486,8 @@ img[alt="Vector_2"] {
         width: 100%;
         min-height: 100%;
         position: fixed;
-        top: -100%;
-        left: 0;
+        top: 0;
+        left: -100%;
         pointer-events: none;
         opacity: 0;
         transition: all 0.5s linear;
@@ -495,7 +497,7 @@ img[alt="Vector_2"] {
     input[type="checkbox"]:checked~div.sm-screen {
         opacity: 1;
         pointer-events: all;
-        top: 0;
+        left: 0;
         z-index: 3 !important;
     }
 
@@ -519,10 +521,16 @@ img[alt="Vector_2"] {
     }
 }
 
+@media (max-width:401px) {
+    img[alt="Vector_1"] {
+        max-width: 250px;
+    }
+}
+
 @media (min-width:400px) {
     img[alt="Vector_2"] {
-        width: 380px;
-        height: 455px;
+        width: 410px;
+        height: 450px;
     }
 
     img[alt="Vector_1"] {
@@ -570,7 +578,7 @@ img[alt="Vector_2"] {
 
     img[alt="Vector_2"] {
         width: 560px;
-        height: 630px;
+        height: 580px;
     }
 
 
@@ -590,7 +598,7 @@ img[alt="Vector_2"] {
     }
 
     .spiner {
-        width: 80%;
+        width: 75%;
     }
 
     .circle_image_top {
@@ -599,30 +607,30 @@ img[alt="Vector_2"] {
     }
 
     .circle_img_topLeft {
-        top: -37%;
-        left: -43%;
-        width: 60%;
+        top: -41%;
+        left: -37%;
+        width: 59%;
     }
 
     .circle_img_bottomLeft {
-        top: 74%;
-        left: -34%;
-        width: 80%;
+        top: 71%;
+        left: -32%;
+        width: 79%;
     }
 
     .circle_img_topRight {
         top: -40%;
-        left: 83%;
-        width: 60%;
+        left: 80%;
+        width: 58%;
     }
 
     .circle_img_bottomRight {
-        top: 73%;
-        left: 57%;
-        width: 80%;
+        top: 72%;
+        left: 54%;
+        width: 77%;
     }
 
-    .mt-md-590 {
+    .mt-md-440 {
         margin-top: 440px;
     }
 
@@ -634,7 +642,7 @@ img[alt="Vector_2"] {
 
     .countdown {
         margin: 0 10px;
-        padding: 10px 20px;
+        padding: 1px 10px;
         border-radius: 10px;
         border: 1px solid var(--white-color);
     }
@@ -643,6 +651,14 @@ img[alt="Vector_2"] {
 
 @media (min-width:768px) {
     img[alt="Vector_1"] {
+        width: 90%;
+    }
+
+    .right_image_whitepaper {
+        width: 100%;
+    }
+
+    .left_image_whitepaper {
         width: 100%;
     }
 
@@ -660,44 +676,11 @@ img[alt="Vector_2"] {
     }
 
     .circleBox {
-        height: 570px;
+        height: 470px;
     }
 
-    .spiner {
-        width: unset;
-    }
-
-    .circle_image_top {
-        top: -69%;
-        width: unset;
-    }
-
-    .circle_img_topLeft {
-        top: -42%;
-        left: -69%;
-        width: unset;
-    }
-
-    .circle_img_bottomLeft {
-        top: 70%;
-        left: -61%;
-        width: unset;
-    }
-
-    .circle_img_topRight {
-        top: -43%;
-        left: 91%;
-        width: unset;
-    }
-
-    .circle_img_bottomRight {
-        top: 71%;
-        left: 54%;
-        width: unset;
-    }
-
-    .mt-sm-440 {
-        margin-top: 590px;
+    .mt-sm-500 {
+        margin-top: 500px;
     }
 
     .slideBox {
@@ -735,9 +718,25 @@ img[alt="Vector_2"] {
     .w_md_100 {
         width: 100%;
     }
+
+    .container {
+        max-width: 760px;
+    }
+
+    .arrow_4 {
+        right: 4%;
+        top: 5%;
+        width: 30%;
+    }
 }
 
 @media (min-width:992px) {
+    .arrow_4 {
+        right: 6%;
+        top: 5%;
+        width: unset;
+    }
+
     .max-w-510 {
         max-width: 450px;
     }
@@ -747,10 +746,9 @@ img[alt="Vector_2"] {
     }
 
     .first-arrow {
-        top: 50px;
+        top: 14px;
         left: 40%;
         width: unset;
-        animation: arrow 7s linear infinite;
     }
 
     img[alt="Vector_2"] {
@@ -762,8 +760,8 @@ img[alt="Vector_2"] {
         height: 300px;
     }
 
-    .mt-lg-350 {
-        margin-top: 350px;
+    .mt-lg-250 {
+        margin-top: 250px;
     }
 
     .ms-lg-65 {
@@ -793,6 +791,14 @@ img[alt="Vector_2"] {
         animation: arrow 7s linear infinite;
     }
 
+    .container {
+        max-width: 980px;
+    }
+
+    .ms-lg-34 {
+        margin-left: 34px;
+    }
+
 }
 
 @media (min-width:1024px) {
@@ -811,12 +817,25 @@ img[alt="Vector_2"] {
         height: 610px;
     }
 
+    .min-vh-80 {
+        min-height: 90vh;
+    }
+
+    img[alt="Vector_1"] {
+        width: 92%;
+    }
+
+    .first-arrow {
+        top: -7px;
+        left: 46%;
+        width: unset;
+    }
 }
 
 @media (min-width:1200px) {
     img[alt="Vector_2"] {
         width: 720px;
-        height: 610px;
+        height: 650px;
     }
 
     .transfrom-37 {
@@ -829,13 +848,26 @@ img[alt="Vector_2"] {
         margin-top: 420px;
     }
 
+    .container {
+        max-width: 1140px;
+    }
+
 }
 
 @media (min-width:1340px) {
     img[alt="Vector_2"] {
-        width: 800px;
+        width: 840px;
+        height: 760px;
     }
 }
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1360px;
+    }
+}
+
+
 
 @keyframes arrow {
     0% {
@@ -901,7 +933,7 @@ img[alt="Vector_2"] {
 
     0%,
     100% {
-        border-radius: 40% 55% 74% 30% / 40% 40% 55% 48%;
+        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
     }
 
     33% {
