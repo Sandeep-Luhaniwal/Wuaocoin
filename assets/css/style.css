@@ -91,9 +91,11 @@
 .line {
     position: relative;
 }
-.line-2{
+
+.line-2 {
     position: relative;
 }
+
 .line-2::after {
     position: absolute;
     content: '';
@@ -110,7 +112,8 @@
 .line-2:hover::after {
     width: 100%;
 }
-.line-2:hover{
+
+.line-2:hover {
     color: var(--primary-color);
 }
 
@@ -714,8 +717,8 @@ img[alt="Vector_2"] {
     }
 
     .token_3 {
-        bottom: 3%;
-        left: 32%;
+        bottom: 2%;
+        left: 29%;
     }
 
     .token_4 {
@@ -776,6 +779,11 @@ img[alt="Vector_2"] {
     .token_2 {
         bottom: 25%;
         left: -13%;
+    }
+
+    .token_3 {
+        bottom: 3%;
+        left: 32%;
     }
 
     .fifth-arrow {
