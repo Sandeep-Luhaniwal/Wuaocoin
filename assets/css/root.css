@@ -103,7 +103,7 @@
     border: 1px solid var(--white-color);
 }
 
-.btn-outline {
+.btn_outline {
     font-family: var(--ff-primary);
     color: var(--white-color);
     font-weight: var(--semiBold);
