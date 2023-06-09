@@ -1,6 +1,8 @@
+// ************ AOS Animation ************
 AOS.init();
 once: true;
 
+//************ First Slider bubl ************
 $('.myslider').slick({
     dots: false,
     infinite: true,
@@ -37,6 +39,8 @@ $('.myslider').slick({
     ]
 });
 
+
+//************ Second Slider Road Map ************
 $('.myslider_1').slick({
     dots: false,
     infinite: true,
@@ -46,7 +50,7 @@ $('.myslider_1').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 1350,
+            breakpoint: 1340,
             settings: {
                 slidesToShow: 5,
                 slidesToScroll: 1,
@@ -91,6 +95,7 @@ $('.myslider_1').slick({
     ]
 });
 
+//************ 3rd Slider Partnership ************
 $('.myslider_2').slick({
     dots: false,
     infinite: true,
@@ -143,6 +148,8 @@ $('.myslider_2').slick({
     ]
 });
 
+//************ Countdown Timer ************
+
 // Get the countdown container element
 const countdownContainer = document.getElementById("countdown-container");
 
@@ -182,17 +189,14 @@ function startCountdown() {
     // TODO: Implement the countdown logic to update the timer every second
 }
 
-// ...
-
 // Update the countdown timer every second
 setInterval(startCountdown, 1000);
 
-// ...
-
+// ************Preloder*************
 setTimeout(() => {
     const box = document.getElementById("box");
 
     box.style.display = "none";
 
     document.body.classList.remove("overflow-hidden");
-}, 3000);
+}, 000);

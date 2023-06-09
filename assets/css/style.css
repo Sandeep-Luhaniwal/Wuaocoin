@@ -22,7 +22,7 @@
     align-items: center;
     background-color: var(--primary-color);
     position: fixed;
-    z-index: 10;
+    z-index: 7 !important;
 }
 
 .loder-img {
@@ -116,8 +116,8 @@
 }
 
 .first-arrow {
-    top: -30px;
-    left: 40%;
+    top: -3px;
+    left: 64%;
     width: 25%;
     animation: arrow 7s linear infinite;
 }
@@ -150,7 +150,7 @@
 
 .third-arrow {
     left: 40%;
-    top: 100px;
+    top: 5%;
     animation: arrow 7s linear infinite;
 }
 
@@ -209,7 +209,10 @@ img[alt="Logo_icon"] {
     width: 160px;
 }
 
-
+.hero {
+    width: 63%;
+    top: -22%;
+}
 
 .max-w-510 {
     max-width: 290px;
@@ -225,7 +228,8 @@ img[alt="Vector_2"] {
 }
 
 .vector_4 {
-    top: -300px;
+    top: -28%;
+    width: 100%;
 }
 
 .vector_3 {
@@ -327,21 +331,11 @@ img[alt="Vector_2"] {
     cursor: pointer;
 }
 
-.circle_image_top:hover {
-    transform: translateY(-15px);
-    transition: all 0.4s linear;
-}
-
 .circle_img_topLeft {
     top: -37%;
     left: -23%;
     width: 48%;
     cursor: pointer;
-}
-
-.circle_img_topLeft:hover {
-    transform: translateX(-15px);
-    transition: all 0.4s linear;
 }
 
 .circle_img_bottomLeft {
@@ -351,11 +345,6 @@ img[alt="Vector_2"] {
     cursor: pointer;
 }
 
-.circle_img_bottomLeft:hover {
-    transform: translateY(15px);
-    transition: all 0.4s linear;
-}
-
 .circle_img_topRight {
     top: -38%;
     left: 75%;
@@ -363,8 +352,28 @@ img[alt="Vector_2"] {
     cursor: pointer;
 }
 
+.circle_image_top:hover {
+    transform: translateY(-15px) !important;
+    transition: all 0.4s linear;
+}
+
+.circle_img_topLeft:hover {
+    transform: translateX(-15px) !important;
+    transition: all 0.4s linear;
+}
+
+.circle_img_bottomLeft:hover {
+    transform: translateY(15px) !important;
+    transition: all 0.4s linear;
+}
+
 .circle_img_topRight:hover {
-    transform: translateX(15px);
+    transform: translateX(15px) !important;
+    transition: all 0.4s linear;
+}
+
+.circle_img_bottomRight:hover {
+    transform: translateY(15px) !important;
     transition: all 0.4s linear;
 }
 
@@ -373,11 +382,6 @@ img[alt="Vector_2"] {
     left: 55%;
     width: 63%;
     cursor: pointer;
-}
-
-.circle_img_bottomRight:hover {
-    transform: translateY(15px);
-    transition: all 0.4s linear;
 }
 
 .slick-dots li button:before {
@@ -409,6 +413,13 @@ img[alt="Vector_2"] {
     height: 140px;
     width: 280px;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.subHeading:hover,
+.opc_05:hover {
+    transform: translateY(-8%);
+    transition: linear 200ms;
 }
 
 .circle-animation {
@@ -455,7 +466,6 @@ img[alt="Vector_2"] {
 .white-space-nowrap {
     white-space: nowrap;
 }
-
 
 @media (max-width:991px) {
     label[for="iconBox"] {
@@ -571,8 +581,8 @@ img[alt="Vector_2"] {
     }
 
     .first-arrow {
-        top: -40px;
-        left: 40%;
+        top: -13px;
+        left: 66%;
         width: unset;
     }
 
@@ -580,7 +590,6 @@ img[alt="Vector_2"] {
         width: 560px;
         height: 580px;
     }
-
 
     .fifth-arrow {
         left: -2%;
@@ -646,7 +655,6 @@ img[alt="Vector_2"] {
         border-radius: 10px;
         border: 1px solid var(--white-color);
     }
-
 }
 
 @media (min-width:768px) {
@@ -839,13 +847,7 @@ img[alt="Vector_2"] {
     }
 
     .transfrom-37 {
-        transform: translateY(-37%);
-        position: absolute;
-        top: -20px;
-    }
-
-    .mt-xl-420 {
-        margin-top: 420px;
+        transform: translateY(-45%);
     }
 
     .container {
@@ -866,8 +868,6 @@ img[alt="Vector_2"] {
         max-width: 1360px;
     }
 }
-
-
 
 @keyframes arrow {
     0% {
