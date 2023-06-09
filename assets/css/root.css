@@ -96,6 +96,13 @@
     font-size: var(--fs-lg);
 }
 
+.subHeading_1 {
+    font-family: var(--ff-primary);
+    color: var(--white-color);
+    font-weight: var(--semiBold);
+    font-size: var(--fs-lg);
+}
+
 .btn-inline {
     font-family: var(--ff-primary);
     color: var(--primary-color);
