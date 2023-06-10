@@ -278,8 +278,8 @@ img[alt="Vector_2"] {
 
 .arrow_2 {
     position: absolute;
-    top: 70%;
-    left: -44%;
+    top: 64%;
+    left: -40%;
     animation: arrow 7s linear infinite;
 }
 
@@ -783,8 +783,8 @@ img[alt="Vector_2"] {
     }
 
     .token_2 {
-        bottom: 25%;
-        left: -13%;
+        bottom: 29%;
+        left: -11%;
     }
 
     .token_3 {
