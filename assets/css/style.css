@@ -784,7 +784,7 @@ img[alt="Vector_2"] {
 
     .token_2 {
         bottom: 29%;
-        left: -11%;
+        left: -16%;
     }
 
     .token_3 {
@@ -838,6 +838,10 @@ img[alt="Vector_2"] {
         left: 46%;
         width: unset;
     }
+          .token_2 {
+              bottom: 29%;
+              left: -14%;
+          }
 }
 
 @media (min-width:1200px) {
