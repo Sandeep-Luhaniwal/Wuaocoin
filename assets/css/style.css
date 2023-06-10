@@ -411,7 +411,7 @@ img[alt="Vector_2"] {
 
 .slideBox {
     height: 140px;
-    width: 280px;
+    max-width: 100%;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -553,7 +553,7 @@ img[alt="Vector_2"] {
 
     .slideBox {
         height: 150px;
-        width: 250px;
+        max-width: 100%;
         border-radius: 15px;
     }
 
@@ -645,7 +645,7 @@ img[alt="Vector_2"] {
 
     .slideBox {
         height: 150px;
-        width: 260px;
+        max-width: 100%;
         border-radius: 15px;
     }
 
@@ -693,7 +693,7 @@ img[alt="Vector_2"] {
 
     .slideBox {
         height: 170px;
-        width: 240px;
+        max-width: 100%;
         border-radius: 15px;
     }
 
@@ -778,7 +778,7 @@ img[alt="Vector_2"] {
 
     .slideBox {
         height: 180px;
-        width: 216px;
+        max-width: 100%;
         border-radius: 15px;
     }
 

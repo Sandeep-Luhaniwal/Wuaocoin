@@ -95,14 +95,20 @@ $('.myslider_1').slick({
     ]
 });
 
+
+
 //************ 3rd Slider Partnership ************
 $('.myslider_2').slick({
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 300,
+    speed: 2000,
+    autoplaySpeed: 0,
+    arrows: false,
     slidesToShow: 5,
     slidesToScroll: 1,
+    pouseonhover: true,
+    cssEase: 'linear',
     responsive: [
         {
             breakpoint: 1440,
